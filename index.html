@@ -1,0 +1,8 @@
+<form action="/predict" method="post">
+    <input type="number" name="total" placeholder="Total Classes" required>
+    <input type="number" name="attended" placeholder="Classes Attended" required>
+    <input type="number" name="previous" placeholder="Previous Attendance %" required>
+    <button type="submit">Predict</button>
+</form>
+
+<h3>{{ prediction_text }}</h3>
